@@ -22,9 +22,7 @@ setStage(''); setStep(2);  };
     setStage(s);
     goal === 'ADVOCACIA' ? setStep(3) : setStep(4);
   };
-  const handleWorkModelSelect = (m: string) => {
-setStep(4);  };
-  const handleAreaSubmit = () => { if (area.trim()) setStep(5); };
+
   const handleDifficultiesSubmit = () => setStep(6);
   const handleFinalSubmit = async () => {
     if (daysPerWeek && hoursPerDay) {
