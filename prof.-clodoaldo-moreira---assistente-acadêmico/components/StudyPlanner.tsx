@@ -17,15 +17,13 @@ export const StudyPlanner: React.FC = () => {
 
   const handleGoalSelect = (selected: 'CONCURSO' | 'ADVOCACIA') => {
     setGoal(selected);
-    setStage(''); setWorkModel(''); setStep(2);
-  };
+setStage(''); setStep(2);  };
   const handleStageSelect = (s: string) => {
     setStage(s);
     goal === 'ADVOCACIA' ? setStep(3) : setStep(4);
   };
   const handleWorkModelSelect = (m: string) => {
-    setWorkModel(m); setStep(4);
-  };
+setStep(4);  };
   const handleAreaSubmit = () => { if (area.trim()) setStep(5); };
   const handleDifficultiesSubmit = () => setStep(6);
   const handleFinalSubmit = async () => {
