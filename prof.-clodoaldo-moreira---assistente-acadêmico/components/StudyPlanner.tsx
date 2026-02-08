@@ -33,7 +33,7 @@ export const StudyPlanner: React.FC = () => {
     if (daysPerWeek && hoursPerDay) {
       setStep(7);
       try {
-result = await generateStudyPlan(
+const result = await generateStudyPlan(
         goal === 'CONCURSO' ? 'Concurso Público' : 'Advocacia Privada',
         stage,
         area,
