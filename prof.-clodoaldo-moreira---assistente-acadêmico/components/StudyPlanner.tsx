@@ -33,11 +33,16 @@ export const StudyPlanner: React.FC = () => {
     if (daysPerWeek && hoursPerDay) {
       setStep(7);
       try {
-        37
-          (
-          goal === 'CONCURSO' ? 'Concurso Público' : 'Advocacia Privada',
-          stage, area, daysPerWeek, hoursPerDalimitations, difficulties  limitations, difficultiesy, limitations, workModel, difficulties
-        );
+result = await generateStudyPlan(
+        goal === 'CONCURSO' ? 'Concurso Público' : 'Advocacia Privada',
+        stage,
+        area,
+        daysPerWeek,
+        hoursPerDay,
+        limitations,
+        difficulties,
+        workModel
+      );
         setPlanHtml(result ?? ''); setStep(8);
       } catch (error) {
         alert("Erro ao gerar o plano."); setStep(6);
