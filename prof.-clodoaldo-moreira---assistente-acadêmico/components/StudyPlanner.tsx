@@ -22,7 +22,7 @@ setStage(''); setStep(2);  };
     setStage(s);
     goal === 'ADVOCACIA' ? setStep(3) : setStep(4);  };
 
-    const handleWorkModelSelect = (model: string) => {
+    const handleWorkModelSelect = (_model: string) => {
     setStep(4);
   };
 
