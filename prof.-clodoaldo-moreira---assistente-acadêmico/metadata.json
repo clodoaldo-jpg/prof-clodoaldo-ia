@@ -1,0 +1,7 @@
+{
+  "name": "Prof. Clodoaldo Moreira - Assistente Acadêmico",
+  "description": "Ferramenta de IA criada para auxiliar alunos e ex-alunos do Professor Clodoaldo Moreira com dúvidas jurídicas e estudos.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
