@@ -112,12 +112,10 @@ export const generateStudyPlan = async (
   daysPerWeek: string,
   hoursPerDay: string,
   limitations: string,
-  workModel?: string,
   difficulties?: string
 ) => {
   try {
-    let specificStructureInstructions = "";
-    if (goal === 'Advocacia Privada') {
+       if (goal === 'Advocacia Privada') {
       specificStructureInstructions = `[INSTRUÇÕES DO PLANO DE ADVOCACIA OMITIDAS PARA BREVIDADE - MANTIDAS NO SERVER]`;
     } else {
       specificStructureInstructions = `[INSTRUÇÕES DO PLANO DE ESTUDOS OMITIDAS PARA BREVIDADE - MANTIDAS NO SERVER]`;
