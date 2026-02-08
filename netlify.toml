@@ -2,6 +2,7 @@
   base = "prof.-clodoaldo-moreira---assistente-acadâmico"
   command = "npm run build"
   publish = "dist"
+    functions = "prof.-clodoaldo-moreira---assistente-acadêmico/netlify/funções"
 
 [build.environment]
   NODE_VERSION = "20"
