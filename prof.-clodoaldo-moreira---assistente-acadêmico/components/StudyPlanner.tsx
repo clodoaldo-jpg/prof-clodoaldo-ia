@@ -20,7 +20,14 @@ export const StudyPlanner: React.FC = () => {
 setStage(''); setStep(2);  };
   const handleStageSelect = (s: string) => {
     setStage(s);
-    goal === 'ADVOCACIA' ? setStep(3) : setStep(4);
+    goal === 'ADVOCACIA' ? setStep(3) : setStep(4);  };
+
+    const handleWorkModelSelect = (model: string) => {
+    setStep(4);
+  };
+
+  const handleAreaSubmit = () => {
+    setStep(5);
   };
 
   const handleDifficultiesSubmit = () => setStep(6);
