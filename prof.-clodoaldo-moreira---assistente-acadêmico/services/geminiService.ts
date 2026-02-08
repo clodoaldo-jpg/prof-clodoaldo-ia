@@ -115,11 +115,6 @@ export const generateStudyPlan = async (
   difficulties?: string
 ) => {
   try {
-       if (goal === 'Advocacia Privada') {
-      specificStructureInstructions = `[INSTRUÇÕES DO PLANO DE ADVOCACIA OMITIDAS PARA BREVIDADE - MANTIDAS NO SERVER]`;
-    } else {
-      specificStructureInstructions = `[INSTRUÇÕES DO PLANO DE ESTUDOS OMITIDAS PARA BREVIDADE - MANTIDAS NO SERVER]`;
-    }
 
     // Nota: Como o prompt é muito grande e complexo, mantivemos a lógica de construção do prompt aqui no client
     // para enviar ao servidor, ou poderíamos mover a construção do prompt para o backend.
