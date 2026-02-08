@@ -41,7 +41,6 @@ const result = await generateStudyPlan(
         hoursPerDay,
         limitations,
         difficulties,
-        workModel
       );
         setPlanHtml(result ?? ''); setStep(8);
       } catch (error) {
