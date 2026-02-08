@@ -7,8 +7,7 @@ export default defineConfig(() => {
     define: {
       // Define process.env como objeto vazio para evitar erro "process is not defined"
       // NÃO injetamos mais a API_KEY aqui por segurança. Ela fica apenas no servidor (Netlify Functions).
-      'process.env': {},
-    },
+'process.env.API_KEY': JSON.stringify(process.env.API_KEY || '')    },
     server: {
       port: 3000
     }
