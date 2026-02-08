@@ -7,7 +7,6 @@ export const StudyPlanner: React.FC = () => {
   const [goal, setGoal] = useState<'CONCURSO' | 'ADVOCACIA' | null>(null);
   
   const [stage, setStage] = useState(''); 
-  const [workModel, setWorkModel] = useState(''); 
   const [area, setArea] = useState('');
   const [difficulties, setDifficulties] = useState(''); 
   const [daysPerWeek, setDaysPerWeek] = useState('');
