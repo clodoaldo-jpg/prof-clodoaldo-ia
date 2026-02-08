@@ -1,0 +1,137 @@
+========================================
+INSTRUCOES PARA PESSOA COM DEFICIENCIA VISUAL
+========================================
+
+Caro Clodoaldo,
+
+Voce vai fazer EXATAMENTE o que esta escrito aqui, passo a passo.
+Nao pule nenhuma etapa.
+
+========================================
+PASSO 1: ABRIR SEU PROJETO NO EDITOR
+========================================
+
+1. Abra seu editor de codigo (VSCode, Sublime, Atom, etc)
+   - Se nao tiver: baixe em VSCode.com (gratis)
+   
+2. Abra a pasta do seu projeto
+   - Arquivo > Abrir Pasta
+   - Procure a pasta chamada "prof-clodoaldo-ia" ou similar
+
+========================================
+PASSO 2: ENCONTRAR E CORRIGIR O ARQUIVO
+========================================
+
+1. Procure pelo arquivo: services/geminiService.ts
+   - Use Ctrl+P (abri rapido)
+   - Digite: gemini
+   - Pressione Enter
+   
+2. Abra o arquivo
+
+3. Vá para linha 115:
+   - Pressione Ctrl+G
+   - Digite: 115
+   - Pressione Enter
+   
+4. Voce vai ver algo como:
+   const workModel = ...
+   
+5. CLIQUE ANTES da palavra "workModel"
+   - Adicione um UNDERSCORE: _workModel
+   - Fica assim: const _workModel = ...
+   
+6. Agora vá para linha 119:
+   - Pressione Ctrl+G novamente
+   - Digite: 119
+   - Pressione Enter
+   
+7. Voce vai ver:
+   const specificStructureInstructions = ...
+   
+8. CLIQUE ANTES dessa palavra
+   - Adicione um UNDERSCORE: _specificStructureInstructions
+   - Fica assim: const _specificStructureInstructions = ...
+   
+9. Salve o arquivo:
+   - Pressione Ctrl+S
+
+========================================
+PASSO 3: TESTAR SE COMPILOU CORRETO
+========================================
+
+1. Abra um terminal (CMD ou PowerShell no Windows)
+   - No VSCode: Ctrl+` (crase/acento)
+   
+2. Verifique que esta na pasta do projeto
+   - Digite: cd [caminho-da-pasta]
+   
+3. Compile:
+   - Digite: npm run build
+   - Pressione Enter
+   
+4. AGUARDE alguns minutos
+   
+5. Se nao houver ERROS em VERMELHO:
+   - Significa que funcionou!
+   - Pode ir para o Passo 4
+
+========================================
+PASSO 4: FAZER UPLOAD NO GITHUB
+========================================
+
+1. Abra este link no navegador:
+   https://github.com/clodoaldo-jpg/prof-clodoaldo-ia/upload
+   
+2. Voce vai ver uma area que diz:
+   "Arraste os arquivos para ca"
+   OU
+   "escolha seus arquivos"
+   
+3. Arraste TODA A PASTA do seu projeto para la
+   OU
+   Clique em "escolha seus arquivos" e selecione a pasta
+   
+4. Va para baixo e procure um botao azul que diz:
+   "Commit changes" ou "Fazer commit"
+   
+5. CLIQUE NELE
+   
+6. Espere carregar
+   
+7. PRONTO! Seu codigo esta no GitHub!
+
+========================================
+PASSO 5: ACOMPANHAR O DEPLOY NO NETLIFY
+========================================
+
+1. Abra este link:
+   https://app.netlify.com/projects/willowy-pithivier-e4ba13/deploys
+   
+2. Voce vai ver uma lista de "DEPLOYS"
+   
+3. Procure pelo mais RECENTE (topo da lista)
+   - Pode estar com status "Building" (construindo)
+   - Aguarde ate ficar "Published" (publicado)
+   
+4. Quando ficar VERDE e disser "Published":
+   - Seu site esta ONLINE!
+   
+5. Clique no link verde para ver o site
+
+========================================
+SE ALGO DER ERRADO:
+========================================
+
+- Se ver ERRO em vermelho:
+  Significa que o codigo ainda tem problema
+  
+- Se o GitHub nao aceitar:
+  Tente fazer upload novamente
+  
+- Se o Netlify disser "Build failed":
+  Volte ao Passo 3 e tente compilar de novo
+  
+Este arquivo esta em: LEIA-ME-PRIMEIRO-DEFICIENTE-VISUAL.txt
+
+Boa sorte! Voce consegue!
