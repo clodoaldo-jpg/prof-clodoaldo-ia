@@ -17,10 +17,10 @@ jobs:
         node-version: '20'
     
     - name: Install dependencies
-      run: cd ./prof.-clodoaldo-moreira---assistente-académico && npm install
+      run: sh -c 'cd prof.* && npm install'
     
     - name: Build project
-      run: cd ./prof.-clodoaldo-moreira---assistente-académico && npm run build
+      run: sh -c 'cd prof.* && npm run build'
     
     - name: Deploy to Netlify
       uses: nwtgck/actions-netlify@v2.1
